@@ -9,19 +9,40 @@ Front-end para a aplicação pets-place.
 - Pedro Henrique Dias Xavier
 - Samuel Rodrigues da Silveira Neto
 
-## Instalação das Dependências
+## Instalação das Dependências fora o docker
 Na primeira vez de rodar o projeto execute esse comando para instalar as dependências
 ```
 
 npm install
 
 ```
-## Execução Do Projeto
+## Execução Do Projeto fora o docker
 ```
 
 npm start
 
 ```
+## Comandos para container docker.
+```bash
+
+# Construir imagem
+$ docker compose build
+
+# Criar e executar container e a subrede petsplace
+$ docker compose up front
+
+# Parar container/serviço
+$ docker compose stop front
+
+# Parar e remover container/serviço e a subrede (tudo)
+$ docker compose down
+
+# Para mais detalhes de uso do comando docker compose
+# leia atentamente o pequeno manual ao executar:
+$ docker compose --help
+
+```
+
 
 Ao executar esse comando será exibido no terminal as opções do expo que é uma ferramenta de desenvolvimanto. 
 
