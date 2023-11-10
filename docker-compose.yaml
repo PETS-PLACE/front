@@ -1,0 +1,20 @@
+# build e execução.
+version: "1.0"
+
+services:
+  front:
+    image: node/front:1.0
+    container_name: front
+    networks:
+      - petsplace
+    ports:
+      - "8081:8081/tcp"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+
+networks:
+  petsplace:
+    external: false
+    name: petsplace
+
