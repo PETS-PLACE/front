@@ -1,4 +1,3 @@
-# build e execução.
 version: "1.0"
 
 services:
@@ -13,8 +12,10 @@ services:
       context: ./
       dockerfile: Dockerfile
 
+# considera que a subrede docker "petsplace"
+# já foi criada pelo back.
 networks:
   petsplace:
-    external: false
+    external: true
     name: petsplace
 
