@@ -20,13 +20,15 @@ export default function Login() {
           <Text style={styles.p}>Escolha o tipo de conta para acessar</Text>
 
           {/* O <Link></Link> é um componente do expo router usado para redirecionar para uma determinada rota*/}
-          <Link href={"/login"} asChild>
+          {/* passndo o parametro typeUser como cliente para rota login */}
+          <Link href={"/login/cliente"} asChild>
             <TouchableOpacity style={styles.button}>
               <Text style={styles.btnText}>CONTA DE CLIENTE</Text>
             </TouchableOpacity>
           </Link>
 
-          <Link href={"/login"} asChild>
+          {/* passndo o parametro typeUser como empresa para rota login */}
+          <Link href={"/login/empresa"} asChild>
             <TouchableOpacity style={styles.button}>
               <Text style={styles.btnText}>CONTA DE EMPRESA</Text>
             </TouchableOpacity>
