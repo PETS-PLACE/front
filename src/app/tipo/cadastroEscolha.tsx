@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'expo-router';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
-//A lib react-native-media-query permite usar medias query e outras funções do css vanila
 import StyleSheet from 'react-native-media-query';
 
-export default function Login() {
+export default function CadastroEscolha() {
   return (
     <View style={styles.conatainer}>
 
@@ -17,18 +16,18 @@ export default function Login() {
 
 
         <View style={styles.viewContent}>
-          <Text style={styles.p}>Escolha o tipo de conta para acessar</Text>
+          <Text style={styles.p}>Escolha o tipo de conta a ser criada</Text>
 
           {/* O <Link></Link> é um componente do expo router usado para redirecionar para uma determinada rota*/}
           {/* passndo o parametro typeUser como cliente para rota login */}
-          <Link href={"/login/cliente"} asChild>
+          <Link href={"/cadastro/cliente"} asChild>
             <TouchableOpacity style={styles.button}>
               <Text style={styles.btnText}>CONTA DE CLIENTE</Text>
             </TouchableOpacity>
           </Link>
 
           {/* passndo o parametro typeUser como empresa para rota login */}
-          <Link href={"/login/empresa"} asChild>
+          <Link href={"/cadastro/empresa"} asChild>
             <TouchableOpacity style={styles.button}>
               <Text style={styles.btnText}>CONTA DE EMPRESA</Text>
             </TouchableOpacity>
