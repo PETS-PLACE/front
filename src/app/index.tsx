@@ -17,6 +17,11 @@ export default function Index() {
               Cadastro
             </Pressable>
           </Link>
+          <Link href={{pathname:'/tipo/PainelUsuario'}}>
+            <Pressable>
+              PainelUsuario
+            </Pressable>
+          </Link>
       </View>
 
       <ScrollView>
