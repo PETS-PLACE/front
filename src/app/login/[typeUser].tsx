@@ -55,7 +55,7 @@ export default function Home() {
           </View>
 
 
-          <Link href={"/(tabs)/about"} asChild>
+          <Link href={"/about"} asChild>
             <TouchableOpacity style={styles.submit}>
               <Text style={styles.button}>Entrar</Text>
             </TouchableOpacity>
