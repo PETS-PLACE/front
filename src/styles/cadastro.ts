@@ -146,7 +146,7 @@ const {styles} = StyleSheet.create(
         cursor: 'pointer',
         textAlign: 'center'
       },
-  
+
       
     }
   )
