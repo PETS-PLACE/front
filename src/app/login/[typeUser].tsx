@@ -55,7 +55,7 @@ export default function Home() {
           </View>
 
 
-          <Link href={"/about"} asChild>
+          <Link href={"/painel/petshop"} asChild>
             <TouchableOpacity style={styles.submit}>
               <Text style={styles.button}>Entrar</Text>
             </TouchableOpacity>

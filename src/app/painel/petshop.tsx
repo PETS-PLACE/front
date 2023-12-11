@@ -1,14 +1,29 @@
-import React from "react";
-import { Text, View } from "react-native";
-import { styles } from "../../styles/PainelPetshop";
+import React, { useState } from "react";
+import { Link } from 'expo-router';
+import { View, Text, TouchableOpacity} from "react-native";
+import styles from '../../styles/PainelUsuario';
+//O styles usado aqui esta como placeholder e deve ser subtituido por PainelPetshop(se não existir crie) att: Thales
 
-export default function Petshop( props:{} ){
+const Main = () => {
+  const [nomes, setNomes] = useState([
+    "Cadastrar serviço",
+    "Cadastrar colaboradores",
+  ]);
 
   return (
-      <View>
-        <Text style={styles.demonstracao}> Painel de ações do petshop </Text>
-        <Text> Css desta tela pronta pode ser delegado à outro integrante </Text>
+      <View style={styles.container}>
+        {nomes.map((nome, index) => (
+          <Link href={"/about"} asChild>
+            <TouchableOpacity
+              key={index}
+              style={styles.quadrado}
+            >
+              <Text style={styles.nome}>{nome}</Text>
+            </TouchableOpacity>
+          </Link>
+        ))}
       </View>
   );
 };
 
+export default Main;
